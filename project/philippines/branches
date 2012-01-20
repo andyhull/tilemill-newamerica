@@ -1,0 +1,50 @@
+@white: #F0F8FF;
+@red: #fdaf6b;
+@orange: #fdc663;
+@yellow: #fae364;
+@green: #d3e46f;
+@turquoise: #aadb78;
+@blue: #a3cec5;
+@purple: #ceb5cf;
+@pink: #f3c1d3;
+@f00: #f00;
+
+#branches{
+  marker-width:4;
+  marker-fill:#000000; 
+  marker-line-width:1;
+  marker-line-color:#ffffff;
+ }
+#branches[Institutio ='1st Valley Bank, Inc.']{marker-fill:@red;}
+#branches[Institutio ='1st TRuBank']{marker-fill:@yellow;}
+#branches[Institutio ='1st Macro Bank']{marker-fill:@green;}
+#branches[Institutio ='Agdao Multi Purpose Cooperative']{marker-fill:@blue;}
+#branches[Institutio ='AMA Bank']{marker-fill:@purple;}
+#branches[Institutio ='Bangko Kabayan']{marker-fill:@purple;}
+#branches[Institutio ='Bank of Makati, Inc.']{marker-fill:@purple;}
+#branches[Institutio ='Gata Daku Multi Purpose Cooperative']{marker-fill:@purple;}
+#branches[Institutio ='GM Bank of Luzon, Inc.']{marker-fill:@red;}
+#branches[Institutio ='Green Bank (A Rural Bank), Inc.']{marker-fill:@turquoise;}
+#branches[Institutio ='Panabo Multi Purpose Cooperative']{marker-fill:@green;}
+
+#inst{
+  marker-width:5;
+  marker-fill:#F69680; 
+  marker-line-width:1;
+  marker-line-color:#666;
+}
+
+#inst[Institutio ='1st Valley Bank, Inc.']{marker-fill:@red;}
+#inst[Institutio ='1st TRuBank']{marker-fill:@yellow;}
+#inst[Institutio ='1st Macro Bank']{marker-fill:@green;}
+#inst[Institutio ='Agdao Multi Purpose Cooperative']{marker-fill:@blue;}
+#inst[Institutio ='AMA Bank']{marker-fill:@purple;}
+#inst[Institutio ='Bangko Kabayan']{marker-fill:@purple;}
+#inst[Institutio ='Bank of Makati, Inc.']{marker-fill:@purple;}
+#inst[Institutio ='Gata Daku Multi Purpose Cooperative']{marker-fill:@purple;}
+#inst[Institutio ='GM Bank of Luzon, Inc.']{marker-fill:@red;}
+#inst[Institutio ='Green Bank (A Rural Bank), Inc.']{marker-fill:@turquoise;}
+#inst[Institutio ='Panabo Multi Purpose Cooperative']{marker-fill:@green;}
+
+
+

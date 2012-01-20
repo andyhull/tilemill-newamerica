@@ -1,0 +1,67 @@
+{
+  "bounds": [
+    -177.9126,
+    8.4724,
+    -55.2173,
+    72.4156
+  ],
+  "center": [
+    -66.81884765624987,
+    20.035289711352235,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "usGini",
+    "template_teaser": "<div class=\"mainToolTip\">\n<h3 class=\"toolName\">[NAME]</h3>\n<div class=\"toolText\">GINI Coefficient: <span class=\"number\">[gini2]</span></div>\n<div class=\"toolText\">% of Households in Poverty: <span class=\"number\">[perPov]</span></div>\n<div class=\"toolText\">Distribution of Income:</div>\n<img src=\"http://chart.googleapis.com/chart?cht=bhs&chxs=0N**%,000000|1,000000&chco=0D253F|4e92db&chs=220x200&chbh=13&chd=t:[hhmi200],[mi150200],[mi100150],[hhmi7510],[hhmi5075],[hhmi3550],[hhmi2535],[hhmi1525],[hhmi1015],[hhmi10]&chxt=x,y&chds=0,25&chxr=0,0,25&chxl=1:|<%2410K|%2410K-%2415K|%2415K-%2425K|%2425K-%2435K|%2435K-%2450K|%2450K-%2475K|%2475K-%24100K|%24100K-%24150K|%24150K-%24200K|%24200K%2B\">\n</div>\n<div><a href=\"http://newamerica.net\" target=\"_blank\"><img src=\"http://assetsdata.newamerica.net/sites/all/themes/assetsdata/logo.png\" style=\"width:175px;\"/></a>\n</div>",
+    "template_full": "<div class=\"mainToolTip\">\n<h3 class=\"toolName\">[NAME]</h3>\n<div class=\"toolText\">GINI Coefficient: <span class=\"number\">[gini2]</span></div>\n<div class=\"toolText\">% of Households in Poverty: <span class=\"number\">[perPov]</span></div>\n<div class=\"toolText\">Distribution of Income:</div>\n<img src=\"http://chart.googleapis.com/chart?cht=bhs&chxs=0N**%,000000|1,000000&chco=0D253F|4e92db&chs=220x200&chbh=13&chd=t:[hhmi200],[mi150200],[mi100150],[hhmi7510],[hhmi5075],[hhmi3550],[hhmi2535],[hhmi1525],[hhmi1015],[hhmi10]&chxt=x,y&chds=0,25&chxr=0,0,25&chxl=1:|<%2410K|%2410K-%2415K|%2415K-%2425K|%2425K-%2435K|%2435K-%2450K|%2450K-%2475K|%2475K-%24100K|%24100K-%24150K|%24150K-%24200K|%24200K%2B\">\n</div>\n<div><a href=\"http://newamerica.net\" target=\"_blank\"><img src=\"http://assetsdata.newamerica.net/sites/all/themes/assetsdata/logo.png\" style=\"width:175px;\"/></a>\n</div>",
+    "template_location": ""
+  },
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "gini.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "usGini",
+      "id": "usGini",
+      "srs": "",
+      "class": "us",
+      "Datasource": {
+        "file": "/Users/Andy/Documents/MapBox/data/usStateGini.shp",
+        "id": "usGini",
+        "project": "usgini",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "lakes",
+      "id": "lakes",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/physical/10m-lakes.zip"
+      }
+    }
+  ],
+  "name": "usGini2010",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}

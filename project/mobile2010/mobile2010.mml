@@ -1,0 +1,76 @@
+{
+  "_center": {
+    "lat": 23.926013031497984,
+    "lon": 33.035888670670005,
+    "zoom": 2
+  },
+  "_format": "png",
+  "_interactivity": {
+    "layer": "products",
+    "key_name": "OBJECTID",
+    "template_teaser": "Number of Mobile Products <br/>\nin [COUNTRY]: [productsCo]",
+    "template_full": "Number of Mobile Products <br/>\nin [COUNTRY]: [productsCo]",
+    "template_location": ""
+  },
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "mobile10",
+      "name": "mobile10",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/mobile2010_1.zip",
+        "type": "shape"
+      },
+      "geometry": "polygon"
+    },
+    {
+      "id": "products",
+      "name": "products",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/mobileProducts2.zip",
+        "type": "shape"
+      },
+      "geometry": "point"
+    },
+    {
+      "id": "lakes",
+      "name": "lakes",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/lakes.zip",
+        "type": "shape"
+      },
+      "geometry": "polygon"
+    },
+    {
+      "id": "places",
+      "name": "places",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://localhost:8889/api/Library/data/files/populated-places.zip",
+        "type": "shape"
+      },
+      "geometry": "point"
+    },
+    {
+      "id": "world",
+      "name": "world",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://tilemill-data.s3.amazonaws.com/world_borders_merc.zip",
+        "type": "shape"
+      }
+    }
+  ],
+  "_legend": "<div><strong>% Mobile Penetration (2009)</strong></div>\n<div><span style='padding:0px 10px; background:#BED2D9;'></span>\u00a0 +75%</div>\n<div><span style='padding:0px 10px; background:#CBDBE0;'></span>\u00a0 75%-50%</div>\n<div><span style='padding:0px 10px; background:#DCE8EB;'></span>\u00a0 50%-25%</div>\n<div><span style='padding:0px 10px; background:#ECF1F2;'></span>\u00a0 -25%</div>"
+}

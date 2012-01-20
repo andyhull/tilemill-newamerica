@@ -1,0 +1,33 @@
+/* Fonts and font sets can be assigned to variables. The first font
+   will be preferred, and fall back to subsequent fonts for characters
+   that are not available, or if the entire font is not available to
+   Mapnik. */
+@futura_med: "Futura Medium","Function Pro Medium","Ubuntu Regular","Trebuchet MS Regular","DejaVu Sans Book";
+@futura_italic: "Futura Medium Italic","Function Pro Medium Italic","Ubuntu Italic","Trebuchet MS Italic","DejaVu Sans Oblique";
+@futura_bold: "Futura Bold","Function Pro Bold","Ubuntu Bold","Trebuchet MS Bold","DejaVu Sans Bold";
+
+/* ---- Countries ---- */
+#nonJhad[zoom>1]{
+  text-face-name: @futura_med;
+  
+  [zoom=3] { 
+    text-size:10; 
+  }
+  [zoom=4] { 
+    text-size:11; 
+  }
+  [zoom=5] { 
+    text-size:12;
+    text-character-spacing:1;
+    text-line-spacing:1;
+  }
+  [zoom>5] {
+    text-size:14;
+    text-character-spacing:2;
+    text-line-spacing:2;
+  }
+  
+  [zoom>=2][zoom<4] { text-name: "[STATE]"; }
+  [zoom>=4] { text-name: "[STATE]"; }
+
+}

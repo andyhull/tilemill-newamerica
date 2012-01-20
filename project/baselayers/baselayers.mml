@@ -1,0 +1,96 @@
+{
+  "bounds": [
+    -125.7536,
+    23.2413,
+    -65.988,
+    49.838
+  ],
+  "center": [
+    -104.8356628417966,
+    46.61926103617121,
+    3
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "abcs",
+    "template_teaser": "\n<div>\n<h1 style=\"margin-top:0;\">{{{school}}}</h1>\n<span style=\"float:left;\">\n<strong>Academic BCS Ranking:</strong> {{{aBCSrank}}}<br/>\n<strong>Football BCS Ranking:</strong> {{{BCSrank}}}<br/>\n<small><font color=\"#AE2325\">Click the pennant to learn more.</font></small>\n</span>\n<img src=\"{{{image}}}\" style=\"float:right;margin:0 0 5px 5px;\" />\n</div>",
+    "template_full": "<h1 style=\"margin-top:0;\"> {{{school}}}</h1>\n<strong>Academic BCS Ranking:</strong> {{{aBCSrank}}}<br/>\n<strong>Football BCS Ranking:</strong> {{{BCSrank}}}<br/>\n<div>\n<p><img src=\"{{{image}}}\" style=\"float:right;margin:0 0 5px 5px;\" />\n{{{longtext}}}</p>\n<p><strong>Graduation Rate Disparity</strong>: {{{gradrate}}}<br />\n<strong>Football Black-White Graduation Disparity</strong>: {{{bwgradrate}}}<br />\n<strong>NCAA Academic Progress Rate</strong>: {{{APR}}}<br/>\n<strong>Academic BCS score</strong>: {{{aBCS}}}</p>\n<p style=\"float:right;\"><a href=\"http://higheredwatch.newamerica.net/blogposts/2011/2011_abcsranking-61200\"><small ><font color=\"#AE2325\">Learn more about the Academic BCS Rankings</font></small></a>\n</p>\n</div>",
+    "template_location": ""
+  },
+  "minzoom": 3,
+  "maxzoom": 5,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "labels.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "multipolygon",
+      "name": "states",
+      "id": "states",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "us_states",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "aph23_map2",
+        "host": "localhost",
+        "port": "5433",
+        "user": "aph23_map2",
+        "password": "battles2",
+        "id": "states",
+        "project": "baselayers",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "lakes",
+      "id": "lakes",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "lakes",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "aph23_map2",
+        "host": "localhost",
+        "port": "5433",
+        "user": "aph23_map2",
+        "password": "battles2",
+        "id": "lakes",
+        "project": "baselayers",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "abcs",
+      "id": "abcs",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "class": "",
+      "Datasource": {
+        "table": "abcs",
+        "key_field": "gid",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "aph23_map2",
+        "host": "localhost",
+        "port": "5433",
+        "user": "aph23_map2",
+        "password": "battles2"
+      }
+    }
+  ],
+  "name": "ABCS",
+  "description": "",
+  "attribution": "",
+  "legend": "<div><a href=\"http://higheredwatch.newamerica.net/blogposts/2011/2011_abcsranking-61200\"><h2 style=\"width:200px;\">The 2011 Academic BCS Rankings</h2></a>\n<img src=\"http://newamerica.net/files/images/bcs_logos/slate+naf.png\"/>\n</div>"
+}
